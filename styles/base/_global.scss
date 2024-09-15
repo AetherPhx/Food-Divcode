@@ -1,0 +1,13 @@
+@use "../theme" as theme;
+
+body {
+	background-color: theme.$color-black;
+	font-family: theme.$font-family;
+	font-size: theme.$font-size-medium;
+	font-weight: theme.$font-weight-regular;
+	color: theme.$color-white;
+}
+
+.map {
+	filter: grayscale(100%) invert(92%) contrast(93%);
+}

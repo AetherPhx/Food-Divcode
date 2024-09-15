@@ -1,0 +1,4 @@
+@use "../tools" as tools;
+.layout {
+	@include tools.space-safe(1200px);
+}

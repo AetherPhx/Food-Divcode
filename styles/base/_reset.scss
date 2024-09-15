@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+}
