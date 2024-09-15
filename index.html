@@ -7,63 +7,69 @@
 		<title>Food Divcode</title>
 	</head>
 	<body>
-		<div id="layout">
-			<header>
-				<nav>
-					<a href="">Inicio</a>
-					<a href="">Servicio</a>
-					<a href="">Productos</a>
+		<div class="layout">
+			<header class="header">
+				<nav class="header__nav">
+					<a class="header__link" href="">Inicio</a>
+					<a class="header__link" href="">Servicio</a>
+					<a class="header__link" href="">Productos</a>
 				</nav>
 
 				<!-- Logo -->
-				<img src="" alt="" />
+				<a class="logo__link" href="">
+					<img class="logo" src="/logo.svg" alt="Logo de Food Divcode" />
+				</a>
 
 				<!-- Carrito de compras -->
-				<section>
+				<section class="header__cart">
 					<!-- Icon -->
-					<div>
+					<div class="header__cart-icon">
 						<!-- Ícono de carrito -->
-						<img src="" alt="" />
+						<img class="header__cart-icon-img" src="" alt="Carrito" />
 
 						<!-- Contador de Prods -->
 						<!--Wrapper-->
-						<div>
+						<div class="header__cart-counter">
 							<!-- Contador dinámico -->
-							<span>0</span>
+							<span class="header__cart-counter-number">0</span>
 						</div>
 					</div>
 
-					<div>
-						<!-- Lista de productos del Carrito -->
-						<span>El carrito está vacío</span>
+					<!-- Lista de productos del Carrito -->
+					<div class="header__cart-dropdown">
 						<!-- Mensaje de carrito vacío -->
-						<ul>
-							<!-- Lista de productos -->
-							<li>
-								<!-- Item Template-->
-								<span>1</span>
+						<span class="header__cart-empty">El carrito está vacío</span>
+
+						<!-- Lista de productos -->
+						<ul class="header__cart-list">
+							<!-- Item Template-->
+							<li class="header__cart-item">
 								<!-- Cantidad de este producto -->
-								<h3>Nombre</h3>
-								<p>$10</p>
-								<!-- Precio total de este producto (precio unitario * cantidad )-->
-								<button>X</button>
+								<span class="header__cart-item-quantity">1</span>
+
+								<h3 class="header__cart-item-name">Nombre</h3>
+
+								<!-- Precio total del Item -->
+								<p class="header__cart-item-price">$10</p>
+
 								<!-- Botón para retirar 1 unid. de este producto -->
+								<button class="header__cart-item-remove">X</button>
 							</li>
 							<!-- Repeat -->
 						</ul>
 
-						<div>
-							<!-- Total -->
-							<span>Total: $0</span>
+						<!-- Total -->
+						<div class="header__cart-total">
 							<!-- Precio total del carrito -->
+							<span class="header__cart-total-price">Total: $0</span>
 						</div>
 					</div>
 				</section>
 			</header>
 
-			<main>
+			<main class="main">
 				<!-- Hero -->
-				<section>
+				<section class="hero">
 					<!-- Info -->
 					<div>
 						<h1>Hamburguesa</h1>
@@ -80,95 +86,128 @@
 					</div>
 
 					<!-- Hamburguesa -->
-					<img src="" alt="" />
+					<img src="/slider.png" alt="Slider" />
 				</section>
 
 				<!-- Hamburguesas -->
-				<section>
-					<h2>Hamburguesa</h2>
+				<section class="burguers">
+					<h2 class="burguers__title">Hamburguesa</h2>
 
-					<ul>
+					<ul class="burguers__list">
 						<!-- Card Template-->
-						<li>
+						<li class="burguers__item">
 							<!-- Foto de la hamburguesa -->
-							<img src="" alt="" />
-							<h3>Nombre</h3>
-							<p>$10</p>
-							<button>Añadir al carrito</button>
+							<img class="burguers__item-img" src="" alt="" />
+							<h3 class="burguers__item-name">Nombre</h3>
+							<p class="burguers__item-price">$10</p>
+							<button class="burguers__item-add">Añadir al carrito</button>
 						</li>
 						<!-- Repeat -->
 					</ul>
 				</section>
 
 				<!-- Horario -->
-				<section>
-					<h2>HORARIO</h2>
+				<section class="contact">
+					<h2 class="contact__title">HORARIO</h2>
 
 					<!-- Dirección -->
-					<section>
-						<h3>Dirección</h3>
-						<p>Lorem ipsum dolor sit</p>
-						<p>Consectetur adipisicing elit.</p>
+					<section class="contact__section">
+						<h3 class="contact__section-name">Dirección</h3>
+						<p class="contact__section-info">Lorem ipsum dolor sit</p>
+						<p class="contact__section-info">Consectetur adipisicing elit.</p>
 					</section>
 
 					<!-- Horario -->
-					<section>
-						<h3>Horario</h3>
-						<p>Lunes a Viernes: 9 AM - 8 PM</p>
-						<p>Sábado y Domingo: 11 AM - 7 PM</p>
+					<section class="contact__section">
+						<h3 class="contact__section-name">Horario</h3>
+						<p class="contact__section-info">Lunes a Viernes: 9 AM - 8 PM</p>
+						<p class="contact__section-info">Sábado y Domingo: 11 AM - 7 PM</p>
 					</section>
 
 					<!-- Teléfono -->
-					<section>
-						<h3>Teléfono</h3>
-						<p>351-9987</p>
-						<p>975-621000</p>
+					<section class="contact__section">
+						<h3 class="contact__section-name">Teléfono</h3>
+						<p class="contact__section-info">351-9987</p>
+						<p class="contact__section-info">975-621000</p>
 					</section>
 
 					<!-- Redes Sociales -->
-					<div>
-						<img src="" alt="Facebook" />
-						<img src="" alt="X (Twitter)" />
-						<img src="" alt="Instagram" />
+					<div class="social">
+						<a class="social__link" href="">
+							<img class="social__logo" src="social/fb.svg" alt="Facebook" />
+						</a>
+
+						<a class="social__link" href="">
+							<img class="social__logo" src="social/x.svg" alt="X (Twitter)" />
+						</a>
+
+						<a class="social__link" href="">
+							<img class="social__logo" src="social/ig.svg" alt="Instagram" />
+						</a>
 					</div>
 				</section>
 
-				<div><!-- Mapa --></div>
+				<!-- Mapa -->
+				<div class="map-container">
+					<iframe
+						class="map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240864.08481701676!2d-99.14361265000001!3d19.3907336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2zQ2l1ZGFkIGRlIE3DqXhpY28sIENETVgsIE3DqXhpY28!5e0!3m2!1ses-419!2spe!4v1707086843097!5m2!1ses-419!2spe"
+						width="100%"
+						height="500"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
 			</main>
 
-			<footer>
+			<footer class="footer">
 				<!-- Logo -->
+				<a class="logo__link" href="">
+					<img class="logo" src="/logo.svg" alt="Logo de Food Divcode" />
+				</a>
 
-				<section>
-					<!-- More Links -->
-					<h3>LOREM</h3>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
+				<!-- More Links -->
+				<section class="footer__section">
+					<h3 class="footer__section-name">LOREM</h3>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
 				</section>
 
-				<section>
-					<!-- More Links -->
-					<h3>LOREM</h3>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
+				<!-- More Links -->
+				<section class="footer__section">
+					<h3 class="footer__section-name">LOREM</h3>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
 				</section>
 
-				<section>
-					<!-- More Links -->
-					<h3>LOREM</h3>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
-					<a href="">lorem</a>
+				<!-- More Links -->
+				<section class="footer__section">
+					<h3 class="footer__section-name">LOREM</h3>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
+					<a class="footer__section-link" href="">lorem</a>
 				</section>
 
-				<div>
-					<!-- Redes Sociales -->
-					Facebook X (Twitter) Instagram
+				<!-- Redes Sociales -->
+				<div class="social">
+					<a class="social__link" href="">
+						<img class="social__logo" src="social/fb.svg" alt="Facebook" />
+					</a>
+
+					<a class="social__link" href="">
+						<img class="social__logo" src="social/x.svg" alt="X (Twitter)" />
+					</a>
+
+					<a class="social__link" href="">
+						<img class="social__logo" src="social/ig.svg" alt="Instagram" />
+					</a>
 				</div>
 			</footer>
 		</div>
