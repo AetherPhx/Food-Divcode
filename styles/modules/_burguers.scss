@@ -1,0 +1,11 @@
+@use "../theme" as theme;
+
+.burguers {
+	padding-block: theme.$space-xlarge;
+	background-color: theme.$color-white;
+	color: theme.$color-black;
+
+	&__title {
+		margin-block: theme.$space-large;
+	}
+}
