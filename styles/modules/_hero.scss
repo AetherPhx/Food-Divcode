@@ -1,0 +1,42 @@
+@use "../theme" as theme;
+
+.hero {
+	padding-block: theme.$space-xxlarge;
+	display: flex;
+
+	&__info {
+		align-self: center;
+		display: grid;
+		gap: theme.$space-xsmall;
+	}
+	&__title {
+		font-size: theme.$fotn-size-huge;
+		text-transform: uppercase;
+	}
+	&__actions {
+		margin-top: 32px;
+		display: flex;
+		gap: theme.$space-large;
+	}
+	&__button {
+		background-color: theme.$color-black;
+		color: theme.$color-white;
+		padding: theme.$space-medium theme.$space-large;
+		border: 2px solid theme.$color-acc;
+		border-radius: 24px;
+		cursor: pointer;
+
+		font-size: theme.$font-size-medium;
+		font-weight: theme.$font-weight-bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: theme.$color-acc;
+		}
+	}
+
+	&__image {
+		width: 550px;
+	}
+}
