@@ -1,0 +1,44 @@
+@use "../theme" as theme;
+
+.header {
+	padding: 12px 16px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__nav {
+		display: flex;
+		gap: 48px;
+	}
+
+	&__cart {
+		position: relative;
+		cursor: pointer;
+
+		&-icon {
+			&-img {
+				width: 40px;
+				height: 40px;
+				stroke: #fff;
+			}
+		}
+
+		&-counter {
+			background-color: theme.$color-white;
+			color: theme.$color-black;
+			padding: 2px 8px;
+			border-radius: 50%;
+
+			font-size: theme.$font-size-xsmall;
+			font-weight: theme.$font-weight-bold;
+			position: absolute;
+			bottom: -2px;
+			right: -2px;
+		}
+
+		&-dropdown {
+			display: none;
+		}
+	}
+}
