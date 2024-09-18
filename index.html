@@ -93,20 +93,27 @@
 					<img class="hero__image" src="/slider.png" alt="Hamburguesa" />
 				</section>
 
-				<!-- Hamburguesas -->
 				<section id="burguers" class="burguers">
 					<h2 class="burguers__title">Hamburguesa</h2>
 
 					<ul class="burguers__list">
-						<!-- Card Template-->
-						<li class="burguers__item">
-							<!-- Foto de la hamburguesa -->
-							<img class="burguers__item-img" src="" alt="" />
-							<h3 class="burguers__item-name">Nombre</h3>
-							<p class="burguers__item-price">$10</p>
-							<button class="burguers__item-add">Añadir al carrito</button>
-						</li>
-						<!-- Repeat -->
+						<div class="burguers__loader">
+							<h3 class="burguers__loader-title">
+								Espera un momento por favor
+							</h3>
+							<p class="burguers__loader-text">
+								¡Estamos cargando la lista de hamburguesas! 🍔
+							</p>
+						</div>
+
+						<div class="burguers__no-burguers" hidden>
+							<h3 class="burguers__no-burguers-title">¡Lo Sentimos!</h3>
+							<p class="burguers__no-burguers-text">
+								Actualmente no hay hamburguesas disponibles 😔
+								<br />
+								Recuerda revisar nuestro horario de atención 📅
+							</p>
+						</div>
 					</ul>
 				</section>
 

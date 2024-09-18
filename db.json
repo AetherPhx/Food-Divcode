@@ -1,0 +1,40 @@
+{
+	"burger": [
+		{
+			"id": 1,
+			"name": "Parrillera",
+			"price": 24,
+			"img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww"
+		},
+		{
+			"id": 2,
+			"name": "Carnívora",
+			"price": 30,
+			"img": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+		},
+		{
+			"id": 3,
+			"name": "Crispy",
+			"price": 21,
+			"img": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+		},
+		{
+			"id": 4,
+			"name": "Doble Todo",
+			"price": 26,
+			"img": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+		},
+		{
+			"id": 5,
+			"name": "Combo 1",
+			"price": 24,
+			"img": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+		},
+		{
+			"id": 6,
+			"name": "Huachana",
+			"price": 25,
+			"img": "https://images.unsplash.com/photo-1549611016-3a70d82b5040?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D"
+		}
+	]
+}
