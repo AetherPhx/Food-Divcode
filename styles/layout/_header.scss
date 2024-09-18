@@ -13,10 +13,12 @@
 	}
 
 	&__cart {
-		position: relative;
+		margin-left: theme.$space-enormous;
 		cursor: pointer;
+		position: relative;
 
 		&-icon {
+			position: relative;
 			&-img {
 				width: 40px;
 				height: 40px;
@@ -27,7 +29,7 @@
 		&-counter {
 			background-color: theme.$color-white;
 			color: theme.$color-black;
-			padding: theme.$space-xsmall theme.$space-small;
+			padding: theme.$space-xxxsmall theme.$space-xsmall;
 			border-radius: 50%;
 
 			font-size: theme.$font-size-xsmall;
@@ -38,7 +40,59 @@
 		}
 
 		&-dropdown {
-			display: none;
+			background-color: theme.$color-white;
+			color: theme.$color-black;
+			width: 364px;
+			border-radius: 10px;
+			margin-top: theme.$space-xxsmall;
+
+			position: absolute;
+			top: 100%;
+			right: 0;
+			z-index: 100;
+			font-size: theme.$font-size-large;
+		}
+		&-empty {
+			padding: theme.$space-large;
+			text-align: center;
+		}
+		&-item {
+			padding: theme.$space-large;
+			border-bottom: 1px solid theme.$color-shadow;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: theme.$space-large;
+
+			&-data {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&-name {
+				font-weight: theme.$font-weight-regular;
+			}
+			&-price {
+				font-weight: theme.$font-weight-bold;
+			}
+			&-remove {
+				width: 30px;
+				color: theme.$color-black;
+
+				cursor: pointer;
+				font-size: theme.$font-size-medium;
+				font-weight: theme.$font-weight-bold;
+				&:hover {
+					color: theme.$color-acc;
+				}
+			}
+		}
+		&-total {
+			padding: theme.$space-large;
+			text-align: center;
+			font-size: theme.$font-size-large;
+			font-weight: theme.$font-weight-bold;
 		}
 	}
 }

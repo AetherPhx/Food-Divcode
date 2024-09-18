@@ -41,31 +41,37 @@
 						<span class="header__cart-counter">0</span>
 					</div>
 
-					<div class="header__cart-dropdown">
-						<!-- Mensaje de carrito vacío -->
-						<span class="header__cart-empty">El carrito está vacío</span>
+					<div class="header__cart-dropdown" hidden>
+						<p class="header__cart-empty">El carrito está vacío</p>
 
-						<!-- Lista de productos -->
 						<ul class="header__cart-list">
-							<!-- Item Template-->
-							<li class="header__cart-item">
-								<!-- Cantidad de este producto -->
-								<span class="header__cart-item-quantity">1</span>
+							<li class="header__cart-item" hidden>
+								<div class="header__cart-item-data">
+									<span class="header__cart-item-quantity">1</span>
 
-								<h3 class="header__cart-item-name">Nombre</h3>
+									<h3 class="header__cart-item-name">Nombre</h3>
 
-								<!-- Precio total del Item -->
-								<p class="header__cart-item-price">$10</p>
+									<p class="header__cart-item-price">$10</p>
+								</div>
 
-								<!-- Botón para retirar 1 unid. de este producto -->
-								<button class="header__cart-item-remove">X</button>
+								<svg
+									class="header__cart-item-remove"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
 							</li>
-							<!-- Repeat -->
 						</ul>
 
-						<!-- Total -->
-						<div class="header__cart-total">
-							<!-- Precio total del carrito -->
+						<div class="header__cart-total" hidden>
 							<span class="header__cart-total-price">Total: $0</span>
 						</div>
 					</div>
@@ -85,8 +91,8 @@
 						</p>
 
 						<div class="hero__actions">
-							<a class="hero__button" href="#burguers">Comprar</a>
-							<a class="hero__button" href="#burguers">Menú</a>
+							<a class="hero__button plus" href="#burguers">Comprar</a>
+							<a class="hero__button minus" href="#burguers">Menú</a>
 						</div>
 					</div>
 
