@@ -44,35 +44,38 @@
 					<div class="header__cart-dropdown" hidden>
 						<p class="header__cart-empty">El carrito está vacío</p>
 
-						<ul class="header__cart-list">
-							<li class="header__cart-item" hidden>
-								<div class="header__cart-item-data">
-									<span class="header__cart-item-quantity">1</span>
+						<div class="header__cart-wrapper" hidden>
+							<ul class="header__cart-list">
+								<!-- * Template -->
+								<!-- <li class="header__cart-item">
+									<div class="header__cart-item-data">
+										<span class="header__cart-item-quantity">1</span>
 
-									<h3 class="header__cart-item-name">Nombre</h3>
+										<h3 class="header__cart-item-name">Nombre</h3>
 
-									<p class="header__cart-item-price">$10</p>
-								</div>
+										<p class="header__cart-item-price">$10</p>
+									</div>
 
-								<svg
-									class="header__cart-item-remove"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6 18L18 6M6 6l12 12"
-									/>
-								</svg>
-							</li>
-						</ul>
+									<svg
+										class="header__cart-item-remove"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M6 18L18 6M6 6l12 12"
+										/>
+									</svg>
+								</li> -->
+							</ul>
 
-						<div class="header__cart-total" hidden>
-							<span class="header__cart-total-price">Total: $0</span>
+							<div class="header__cart-total">
+								<span class="header__cart-total-price">Total: $0</span>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -91,8 +94,10 @@
 						</p>
 
 						<div class="hero__actions">
-							<a class="hero__button plus" href="#burguers">Comprar</a>
-							<a class="hero__button minus" href="#burguers">Menú</a>
+							<a class="hero__button plus">Comprar</a>
+							<a class="hero__button minus">Menú</a>
+							<!-- <a class="hero__button plus" href="#burguers">Comprar</a>
+							<a class="hero__button minus" href="#burguers">Menú</a> -->
 						</div>
 					</div>
 
