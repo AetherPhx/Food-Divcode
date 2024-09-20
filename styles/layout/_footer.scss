@@ -3,4 +3,22 @@
 
 .footer {
 	@include tools.space-safe(1200px);
+	padding-block: theme.$space-xxlarge;
+
+	display: flex;
+	justify-content: space-between;
+
+	&__section {
+		&-name {
+			text-transform: uppercase;
+			font-size: theme.$font-size-medium;
+			margin-bottom: theme.$space-medium;
+		}
+		&-content {
+			display: grid;
+			gap: theme.$space-xxsmall;
+
+			font-size: theme.$font-size-small;
+		}
+	}
 }
