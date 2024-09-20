@@ -4,7 +4,7 @@ import { setUpCart } from "./Cart.js";
 
 (() => {
 	document.addEventListener("DOMContentLoaded", () => {
-		// loadBurguersList();
+		loadBurguersList();
 		setUpCart();
 	});
 })();

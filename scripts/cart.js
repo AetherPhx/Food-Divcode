@@ -51,7 +51,8 @@ const cart = {
 	},
 	calcTotalPrice() {
 		this.totalPrice = this.products.reduce((acc, product) => {
-			return acc + product.getTotalPrice();
+			const fullPrice = product.getTotalPrice();
+			return acc + fullPrice;
 		}, 0);
 
 		const totalPriceHTML = document.querySelector(".header__cart-total-price");
@@ -60,11 +61,15 @@ const cart = {
 
 	// Add Product
 	addProduct(newProduct) {
-		if (this.products.find((product) => product.id === newProduct.id)) {
-			this.increseProduct(newProduct);
+		const existingProduct = this.products.find(
+			(product) => product.id === newProduct.id
+		);
+		if (existingProduct) {
+			this.increseProduct(existingProduct);
 			this.refreshCart();
 			return;
 		}
+
 		newProduct.quantity++;
 		this.products.push(newProduct);
 		this.printNewProduct(newProduct);
@@ -137,22 +142,16 @@ export function setUpCart() {
 	const cartIcon = document.querySelector(".header__cart-icon");
 	cartIcon.addEventListener("click", toggleCartDropdown);
 
-	// Create Example Burguers
-	const burguers = [
-		new Product(1, "Parrillera", 1),
-		new Product(2, "Carnívora", 2),
-		new Product(3, "Crispy", 3),
-		new Product(4, "Doble Todo", 4),
-	];
-	burguers.forEach((burguer) => cart.addProduct(burguer));
-	const superBurguer = new Product(5, "Combo 1", 5);
-
 	// Create Cart
 	cart.refreshCart();
 
 	// Add Product to Cart
-	document.querySelector(".hero__image").addEventListener("click", () => {
-		cart.addProduct(superBurguer);
+	document.querySelector(".burguers__list").addEventListener("click", (e) => {
+		const { target } = e;
+		if (target.classList.contains("burguers__item-add")) {
+			const burguerItem = target.closest(".burguers__item");
+			cart.addProduct(createBurguer(burguerItem));
+		}
 	});
 
 	// Remove Product from Cart
@@ -177,4 +176,19 @@ function showCartDropdown(cart) {
 }
 function hideCartDropdown(cart) {
 	cart.toggleAttribute("hidden", true);
+}
+
+function createBurguer(burguerToCreate) {
+	const formatPrice = (priceUnformatted) =>
+		Number(priceUnformatted.replace("$ ", ""));
+
+	const id = Number(burguerToCreate.id);
+	const name = burguerToCreate.querySelector(
+		".burguers__item-name"
+	).textContent;
+	const price = formatPrice(
+		burguerToCreate.querySelector(".burguers__item-price").textContent
+	);
+
+	return new Product(id, name, price);
 }
