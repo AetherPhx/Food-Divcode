@@ -13,6 +13,11 @@
 		display: flex;
 		gap: theme.$space-xlarge;
 	}
+	&__link {
+		&:hover {
+			color: theme.$color-acc;
+		}
+	}
 
 	&__cart {
 		margin-left: theme.$space-enormous;
