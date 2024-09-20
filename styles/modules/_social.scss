@@ -1,0 +1,25 @@
+@use "../theme" as theme;
+
+.social {
+	&__network {
+		display: flex;
+		gap: theme.$space-large;
+	}
+	&__link {
+		padding: theme.$space-xsmall;
+		border-radius: 50%;
+
+		display: grid;
+		place-items: center;
+
+		cursor: pointer;
+		&:hover {
+			background-color: theme.$color-acc;
+		}
+	}
+	&__logo {
+		height: 20px;
+		width: 20px;
+		object-fit: contain;
+	}
+}

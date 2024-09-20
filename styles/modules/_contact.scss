@@ -3,4 +3,30 @@
 
 .contact {
 	@include tools.space-safe(1200px);
+
+	padding-block: theme.$space-xlarge theme.$space-xxlarge;
+
+	&__title {
+		font-size: theme.$fotn-size-huge;
+		margin-bottom: theme.$space-xlarge;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__section {
+		&-name {
+			font-size: theme.$font-size-medium;
+			color: theme.$color-gray;
+			margin-bottom: theme.$space-medium;
+		}
+
+		&-info {
+			text-transform: uppercase;
+			font-weight: theme.$font-weight-bold;
+			margin-block: theme.$space-small;
+		}
+	}
 }
