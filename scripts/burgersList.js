@@ -34,27 +34,34 @@ function printBurguersList(burguersList) {
 		burguerItem.classList.add("burguers__item");
 		burguerItem.id = id;
 
+		const burguerFigure = document.createElement("figure");
+		burguerFigure.classList.add("burguers__item-figure");
 		const burguerImg = document.createElement("img");
 		burguerImg.classList.add("burguers__item-img");
 		burguerImg.src = img;
 		burguerImg.alt = `Hamburguesa "${name}"`;
-		burguerItem.appendChild(burguerImg);
+		burguerFigure.appendChild(burguerImg);
+		burguerItem.appendChild(burguerFigure);
+
+		const burguerInfo = document.createElement("div");
+		burguerInfo.classList.add("burguers__item-info");
 
 		const burguerName = document.createElement("h3");
 		burguerName.classList.add("burguers__item-name");
 		burguerName.textContent = name;
-		burguerItem.appendChild(burguerName);
+		burguerInfo.appendChild(burguerName);
 
 		const burguerPrice = document.createElement("p");
 		burguerPrice.classList.add("burguers__item-price");
 		burguerPrice.textContent = `$ ${price}`;
-		burguerItem.appendChild(burguerPrice);
+		burguerInfo.appendChild(burguerPrice);
 
 		const burguerAdd = document.createElement("button");
 		burguerAdd.classList.add("burguers__item-add");
 		burguerAdd.textContent = "Añadir al carrito";
-		burguerItem.appendChild(burguerAdd);
+		burguerInfo.appendChild(burguerAdd);
 
+		burguerItem.appendChild(burguerInfo);
 		burguersHTML.appendChild(burguerItem);
 	});
 }

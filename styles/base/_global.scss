@@ -8,6 +8,13 @@ body {
 	color: theme.$color-white;
 }
 
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
 .map {
 	filter: grayscale(100%) invert(92%) contrast(93%);
 }
