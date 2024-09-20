@@ -1,6 +1,6 @@
 @use "../theme" as theme;
 @use "../tools" as tools;
 
-.footer {
+.contact {
 	@include tools.space-safe(1200px);
 }

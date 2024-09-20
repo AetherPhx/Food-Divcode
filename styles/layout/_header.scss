@@ -1,6 +1,8 @@
 @use "../theme" as theme;
+@use "../tools" as tools;
 
 .header {
+	@include tools.space-safe(1200px);
 	padding: theme.$space-xlarge theme.$space-large;
 
 	display: flex;

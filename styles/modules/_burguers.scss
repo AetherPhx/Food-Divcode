@@ -1,9 +1,15 @@
 @use "../theme" as theme;
+@use "../tools" as tools;
 
 .burguers {
+	@include tools.space-safe(1200px);
+
 	padding-block: theme.$space-xlarge;
-	background-color: theme.$color-white;
 	color: theme.$color-black;
+
+	&__wrapper {
+		background-color: theme.$color-white;
+	}
 
 	&__title {
 		margin-block: theme.$space-large;

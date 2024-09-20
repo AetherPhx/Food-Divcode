@@ -1,6 +1,9 @@
 @use "../theme" as theme;
+@use "../tools" as tools;
 
 .hero {
+	@include tools.space-safe(1200px);
+
 	padding-block: theme.$space-xxlarge;
 	display: flex;
 
@@ -12,6 +15,9 @@
 	&__title {
 		font-size: theme.$fotn-size-huge;
 		text-transform: uppercase;
+	}
+	&__description {
+		color: theme.$color-gray;
 	}
 	&__actions {
 		margin-top: 32px;
