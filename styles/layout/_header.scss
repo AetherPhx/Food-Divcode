@@ -60,7 +60,7 @@
 			font-size: theme.$font-size-large;
 		}
 		&-empty {
-			padding: theme.$space-large;
+			padding: theme.$space-big;
 			text-align: center;
 		}
 		&-item {
@@ -96,7 +96,7 @@
 			}
 		}
 		&-total {
-			padding: theme.$space-large;
+			padding: theme.$space-big;
 			text-align: center;
 			font-size: theme.$font-size-large;
 			font-weight: theme.$font-weight-bold;
